@@ -7,17 +7,35 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     </head>
     <body>
-        <div class="googlelogo">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+        <div class="headernav">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo" id="googlelogo">
+            <nav>
+                <a href="C:\Users\HOME\Chrome-Project\home-search-page.html">Home Page</a>
+                <a href="C:\Users\HOME\Chrome-Project\image-search.html">Image Search</a>
+                <a href="C:\Users\HOME\Chrome-Project\advanced-search.html">Advanced Search</a>
+            </nav>
         </div>
-        <nav>
-            <a href="C:\Users\HOME\Chrome-Project\home-search-page.html">Home Page</a>
-            <a href="C:\Users\HOME\Chrome-Project\image-search.html">Image Search</a>
-            <a href="C:\Users\HOME\Chrome-Project\advanced-search.html">Advanced Search</a>
-        </nav>
         <div id="advsearch"> Advanced Search</div>
         <hr>
         <br>
         <div id="headtext">Find pages with...</div>
+        <br>
+        <form action="https://google.com/search?">
+            <div id="headtext" style="font-size: 17px; margin-top: 50px;">
+                all these words:
+                <input type="text" name="as_q" class="textbox" style="margin-left: 96px;">
+                <br>
+                <div style="margin-top: 40px;">this exact word or phrase:
+                    <input type="text" name="as_epq" class="textbox" style="margin-left: 20px;">
+                </div>
+                <div style="margin-top: 40px;">any of these words:
+                    <input type="text" name="as_oq" class="textbox" style="margin-left: 68px;">
+                </div>
+                <div style="margin-top: 40px;">none of these words:
+                    <input type="text" name="as_eq" class="textbox" style="margin-left: 55px;">
+                </div>
+            </div>
+            <input type="submit" value="Advanced Search" id="advancedbuttonsearch">
+        </form>
     </body>
 </html>
